@@ -1,0 +1,98 @@
+﻿{
+  "name": "IISKyrs9ВозвратБилета",
+  "modelName": "i-i-s-kyrs9-возврат-билета",
+  "className": "ВозвратБилета",
+  "nameSpace": "IIS.Kyrs9",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаПокупки",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "причинаВозв",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "покупатель",
+      "relatedTo": "i-i-s-kyrs9-покупатель",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "покупИлиВозвБ",
+      "relatedTo": "i-i-s-kyrs9-покуп-или-возв-б",
+      "inverse": "возвратБилета"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ВозвратБилетаE",
+      "modelName": "i-i-s-kyrs9-возврат-билета",
+      "attrs": [
+        {
+          "name": "датаПокупки",
+          "caption": "Дата покупки",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "причинаВозв",
+          "caption": "Причина аозврата",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Покупатель",
+          "lookupValueField": "покупатель",
+          "relationName": "Покупатель",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Покупатель",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "банковскийСчет",
+              "caption": "Банковский счет",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Покупатель",
+          "name": "покупатель",
+          "relatedTo": "i-i-s-kyrs9-покупатель",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

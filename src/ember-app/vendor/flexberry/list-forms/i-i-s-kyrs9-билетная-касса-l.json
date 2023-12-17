@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kyrs9-билетная-касса-e",
+  "editForm": "i-i-s-kyrs9-билетная-касса-e",
+  "external": false,
+  "caption": "",
+  "name": "IISKyrs9БилетнаяКассаL",
+  "className": "БилетнаяКассаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs9-билетная-касса",
+      "modelProjection": "БилетнаяКассаL"
+    }
+  ]
+}

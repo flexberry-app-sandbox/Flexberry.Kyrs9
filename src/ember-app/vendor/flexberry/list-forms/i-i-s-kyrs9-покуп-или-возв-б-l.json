@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kyrs9-покуп-или-возв-б-e",
+  "editForm": "i-i-s-kyrs9-покуп-или-возв-б-e",
+  "external": false,
+  "caption": "",
+  "name": "IISKyrs9ПокупИлиВозвБL",
+  "className": "ПокупИлиВозвБL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs9-покуп-или-возв-б",
+      "modelProjection": "ПокупИлиВозвБL"
+    }
+  ]
+}
